@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "203539413817",
+    "firebase_url": "https://dejournalapp.firebaseio.com",
+    "project_id": "dejournalapp",
+    "storage_bucket": "dejournalapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203539413817:android:e28fc261a7f96140",
+        "android_client_info": {
+          "package_name": "com.example.android.dejournalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203539413817-e6npgbuq5vfs22g3ag252892fph5kekj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.dejournalapp",
+            "certificate_hash": "ab7ee9f1854f6e9d45bd0515607b651549b7ee69"
+          }
+        },
+        {
+          "client_id": "203539413817-vb39klv834cqjtcgm2e093gvcppjaii2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8NPjnPw1LXF1Rfx8ClGTwgFqU9xtvGy8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203539413817-vb39klv834cqjtcgm2e093gvcppjaii2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
