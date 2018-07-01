@@ -6,6 +6,7 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
+import com.example.android.dejournalapp.DatabaseFiles.AddJournal;
 import com.example.android.dejournalapp.DatabaseFiles.AppDatabase;
 
 import java.util.List;

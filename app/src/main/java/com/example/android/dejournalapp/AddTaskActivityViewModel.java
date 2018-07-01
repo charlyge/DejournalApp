@@ -3,6 +3,7 @@ package com.example.android.dejournalapp;
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 
+import com.example.android.dejournalapp.DatabaseFiles.AddJournal;
 import com.example.android.dejournalapp.DatabaseFiles.AppDatabase;
 
 /**

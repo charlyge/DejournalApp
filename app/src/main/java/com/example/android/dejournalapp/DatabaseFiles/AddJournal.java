@@ -1,4 +1,4 @@
-package com.example.android.dejournalapp;
+package com.example.android.dejournalapp.DatabaseFiles;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
@@ -21,6 +21,18 @@ public class AddJournal {
     public AddJournal(String note, Date date){
     this.note=note;
     this.date=date;
+
+    }
+
+    @Ignore
+    public AddJournal(String note){
+        this.note=note;
+
+    }
+
+    @Ignore
+    public AddJournal(){
+
 
     }
     public AddJournal(int id ,String note, Date date){

@@ -7,13 +7,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.text.DateFormat;
+import com.example.android.dejournalapp.DatabaseFiles.AddJournal;
+
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by DELL PC on 6/25/2018.
@@ -22,9 +23,18 @@ import java.util.List;
 public class AddJournalAdapter extends RecyclerView.Adapter<AddJournalAdapter.AddJournalViewHolder> {
 
      List<AddJournal> addJournalList = new ArrayList<>();
+    // Constant for date format
+    private static final String DATE_FORMAT = "dd/MM/yyy";
+    private SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT, Locale.getDefault());
      Context context;
-    public AddJournalAdapter(Context context){
+    public AddJournalAdapter(Context context,List<AddJournal> addJournalList){
      this.context =context;
+     this.addJournalList=addJournalList;
+
+    }
+
+    public AddJournalAdapter(Context context){
+        this.context =context;
 
     }
 
@@ -42,7 +52,7 @@ public class AddJournalAdapter extends RecyclerView.Adapter<AddJournalAdapter.Ad
      final AddJournal addJournal= addJournalList.get(position);
      final int itemId = addJournal.getId();
      holder.noteTextView.setText(addJournal.getNote());
-     holder.dateTextView.setText(addJournal.getDate().toString());
+     holder.dateTextView.setText(dateFormat.format(addJournal.getDate()));
 
 
      holder.layout.setOnClickListener(new View.OnClickListener() {

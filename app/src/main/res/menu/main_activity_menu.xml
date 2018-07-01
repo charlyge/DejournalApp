@@ -10,9 +10,14 @@
              />
 
     <item
-        android:id="@+id/login_logout"
-        android:title="Login"
-        app:showAsAction="ifRoom"
+        android:id="@+id/logout"
+        android:title="LogOut"
+        app:showAsAction="never"
         />
 
+    <item
+        android:id="@+id/login"
+        android:title="LogIn"
+        app:showAsAction="never"
+        />
 </menu>

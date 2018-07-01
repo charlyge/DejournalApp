@@ -6,8 +6,6 @@ import android.arch.persistence.room.RoomDatabase;
 import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
 
-import com.example.android.dejournalapp.AddJournal;
-
 /**
  * Created by DELL PC on 6/25/2018.
  */
